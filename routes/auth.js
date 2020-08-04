@@ -63,7 +63,7 @@ router.post("/token", validation.validateTokenReq(), async (req, res) => {
           .then((newToken) => {
             delete newToken._id;
             delete newToken.__v;
-            res.json({ newToken });
+            res.json(newToken);
           })
           .catch((e) => {
             res.status(402);
@@ -188,7 +188,7 @@ router.post("/forgot-password", validation.forgotPasswordReq(), (req, res) => {
         recovery.generateResetEmail(user);
       }
     })
-    .catch((err) => {});
+    .catch((err) => { });
 });
 
 router.post("/reset-password", validation.resetPasswordReq(), (req, res) => {

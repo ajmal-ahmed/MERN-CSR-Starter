@@ -4,8 +4,8 @@ const connectDB = require("./lib/db");
 
 const app = express();
 
-// Connect DB
-// connectDB();
+// Fontend
+app.use(express.static('client/build'))
 
 // Init Middleware
 //extended: true ->support parsing of application/x-www-form-urlencoded post data
@@ -16,7 +16,7 @@ app.use("/api", require("./routes/index"));
 
 // UI
 app.get("/*", (req, res) => {
-  res.sendFile("public/index.html", { root: __dirname });
+  res.sendFile("client/build/index.html", { root: __dirname });
 });
 
 const PORT = process.env.PORT || 3005;

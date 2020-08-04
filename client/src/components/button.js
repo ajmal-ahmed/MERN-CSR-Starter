@@ -3,16 +3,16 @@ import styled from 'styled-components';
 const Button = styled.button`
   /* Adapt the colors based on primary prop*/
   background: ${(props) =>
-        props.primary ? '#007bff' : 'white'
-    };
+    props.primary ? '#ff867c' : 'white'
+  };
   color: ${(props) =>
-        props.primary ? 'white' : 'palevioletred'
-    };
+    props.primary ? 'white' : 'palevioletred'
+  };
 
   font-size: 14px;
     padding: 6px 12px;
-    margin-bottom: 0;
-
+    margin: 20px auto 10px;
+    width: ${props => props.width ? props.width : "100px"};
     display: inline-block;
     text-decoration: none;
     text-align: center;
@@ -27,6 +27,7 @@ const Button = styled.button`
     user-select: none;
     background-image: none;
     border: 1px solid transparent;
+    border-radius: 3px;
 `;
 
 export default Button;
