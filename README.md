@@ -2,7 +2,7 @@
 
 Sample Client Side Rendering App featuring - Node.js, Express.js, React.js, Redux-thunk, JWT Authentication and MongoDB
 
-React is built On CRA 
+React is built On CRA
 
 Folder Structure - React App under client folder as seperate project(Just the way i like them)
 
@@ -21,3 +21,13 @@ To run ReactApp use command `npm start` from client folder
 # Build Frontend
 
 To run ReactApp use command `npm run build` from client folder
+
+# Tech stack
+
+Node.js
+Express.js
+JWT
+MongoDB
+React.js
+Redux-thunk
+Styled-Components
