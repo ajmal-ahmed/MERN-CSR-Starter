@@ -25,9 +25,15 @@ To run ReactApp use command `npm run build` from client folder
 # Tech stack
 
 Node.js
+
 Express.js
+
 JWT
+
 MongoDB
+
 React.js
+
 Redux-thunk
+
 Styled-Components
